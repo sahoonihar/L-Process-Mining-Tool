@@ -1,0 +1,8 @@
+digraph M{
+rankdir=LR;
+node [shape=doublecircle];
+x [shape=none, label=""];
+node [shape=circle];
+x->0;
+0->0 [label=" a,b,c,d,e "];
+}

@@ -1,0 +1,21 @@
+digraph M{
+rankdir=LR;
+node [shape=doublecircle];100000 ;
+x [shape=none, label=""];
+node [shape=circle];
+x->000001;
+000001->000110 [label=" a "];
+000001->000000 [label=" b,c,d,e "];
+100000->000000 [label=" a,b,c,d,e "];
+000110->000000 [label=" a,d,e "];
+000110->001010 [label=" b "];
+000110->001000 [label=" c "];
+000000->000000 [label=" a,b,c,d,e "];
+001010->000000 [label=" a,b,e "];
+001010->001000 [label=" c "];
+001010->010000 [label=" d "];
+010000->000000 [label=" a,b,c,d "];
+010000->100000 [label=" e "];
+001000->000000 [label=" a,b,c,e "];
+001000->010000 [label=" d "];
+}
